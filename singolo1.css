@@ -53,14 +53,11 @@
   width: 371px;
   padding-top: 43px;
 
+  list-style-type: none;
   font-weight: 700;
   font-size: 12px;
   text-align: left;
   color: #494e62;
-}
-
-.header .nav-container li:nth-child(1) {
-  list-style-type: none;
 }
 
 .header .nav-container a {
@@ -72,8 +69,12 @@
   color: #f06c64;
 }
 
-.header .nav-container li:nth-child(1) a {
+.header .nav-container a.active {
   color: #f06c64;
+}
+
+.header .nav-container li.separator::after {
+  content: "\2022";
 }
 
 .slider {
