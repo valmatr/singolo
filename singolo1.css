@@ -1,0 +1,176 @@
+@import "/assets/Lato/stylesheet.css" all;
+
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: "latoregular", serif;
+
+  border: 0;
+}
+
+.page-wrapper {
+  max-width: 1020px;
+  margin: auto;
+}
+
+.wrapper {
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 89px;
+
+  text-transform: uppercase;
+  font-stretch: ultra-condensed;
+
+  background-color: #2d303a;
+  border-bottom: #323746 solid 6px;
+}
+
+.header .logo {
+  margin: 0;
+  padding-top: 31px;
+
+  font-weight: 700;
+  font-size: 25px;
+  text-align: left;
+  color: #ffffff;
+  font-stretch: ultra-condensed;
+  letter-spacing: -0.5px;
+}
+
+.header .logo-tail {
+  color: #f06c64;
+}
+
+.header .nav-container {
+  display: flex;
+  justify-content: space-between;
+  width: 371px;
+  padding-top: 43px;
+
+  font-weight: 700;
+  font-size: 12px;
+  text-align: left;
+  color: #494e62;
+}
+
+.header .nav-container li:nth-child(1) {
+  list-style-type: none;
+}
+
+.header .nav-container a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.header .nav-container a:hover {
+  color: #f06c64;
+}
+
+.header .nav-container li:nth-child(1) a {
+  color: #f06c64;
+}
+
+.slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 600px;
+
+  background-color: #f06c64;
+  border-bottom: 15px solid #ea676b;
+}
+
+.slider-action {
+  display: inline-block;
+  width: 16px;
+  height: 27px;
+
+  background-image: url("./assets/images/chev-overlay.svg");
+}
+
+.slider-action:hover {
+  background-image: url("./assets/images/chev.svg");
+}
+
+.slider-right .slider-action {
+  transform: rotate(180deg);
+}
+
+.slider-center {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+}
+
+.iphone {
+  position: absolute;
+}
+
+.shadow {
+  width: 240px;
+  height: 483px;
+  background-image: url("./assets/images/Shadow.png");
+  background-repeat: no-repeat;
+}
+
+.base {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 215px;
+  height: 458px;
+  background-image: url("./assets/images/iphone.png");
+  background-repeat: no-repeat;
+}
+
+.iphone.vertical {
+  left: 56px;
+  top: 53px;
+}
+
+.iphone.horizontal {
+  left: 490px;
+  top: 53px;
+  transform: rotate(90deg);
+}
+
+.horizontal .shadow {
+  transform: scaleX(-1);
+}
+
+.horizontal .base {
+  top: auto;
+  bottom: 0;
+}
+
+.horizontal .screen {
+  top: 89px;
+}
+
+.screen {
+  position: absolute;
+  top: 64px;
+  left: 13px;
+
+  width: 188px;
+  height: 333px;
+
+  background-image: none;
+  background-repeat: no-repeat;
+  border: 1px solid #c7c8c7;
+}
+
+.screen.first-theme {
+  background-image: url("./assets/images/bg-yellow.png");
+}
+
+.screen.second-theme {
+  background-image: url("./assets/images/bg-blue.png");
+}
