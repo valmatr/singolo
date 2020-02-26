@@ -1,0 +1,21 @@
+@import "/assets/Lato/stylesheet.css" all;
+
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: "latoregular", "Arial", sans-serif;
+
+  border: 0;
+}
+
+.page-wrapper {
+  width: 1020px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.wrapper {
+  padding-right: 40px;
+  padding-left: 40px;
+}
