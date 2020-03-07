@@ -22,7 +22,7 @@
 
 .get-quote {
   padding-top: 70px;
-  padding-bottom: 50px;
+  padding-bottom: 12px;
 
   color: #f0d8d9;
   letter-spacing: -0.2px;
@@ -57,13 +57,12 @@
 .get-quote .data-fields {
   display: flex;
   flex-direction: column;
-  width: 621px;
+  width: 618px;
 }
 
 .get-quote .data-fields > * {
-  width: 604px;
   height: 38px;
-  margin-bottom: 16px;
+  padding-right: 15px;
   padding-left: 15px;
 
   font-size: 12px;
@@ -74,15 +73,32 @@
   border-radius: 5px;
 }
 
+.get-quote .data-fields > :not(:last-child) {
+  margin-bottom: 16px;
+
+  color: #f0d8d9;
+}
+
 .get-quote .data-fields > ::placeholder {
   color: #f48c8f;
+}
+
+.get-quote .data-fields > :focus {
+  outline: 2px solid #ea676b;
 }
 
 .get-quote .data-fields > .details {
   height: 196px;
   padding-top: 7px;
 
-  color: #f48c8f;
+  resize: none;
+}
+
+.get-quote .data-fields > [type="submit"]:hover,
+[type="submit"]:focus {
+  color: #f0d8d9;
+
+  cursor: pointer;
 }
 
 .get-quote .contact-info {
@@ -123,10 +139,26 @@
 
   color: inherit;
   text-decoration: none;
+
+  background-repeat: no-repeat;
+  background-position: left center;
 }
 
 .get-quote .contacs-menu > li > a.mail {
   letter-spacing: 0.01px;
+
+  background-image: url("assets/images/mail.svg");
+  background-position: 0 5px;
+}
+
+.get-quote .contacs-menu > li > a.tel {
+  background-image: url("assets/images/tel.svg");
+  background-position: 1px 2px;
+}
+
+.get-quote .contacs-menu > li > a.geo {
+  background-image: url("assets/images/location.svg");
+  background-position: 3px 3px;
 }
 
 .get-quote .contacs-menu > li > a:hover {
